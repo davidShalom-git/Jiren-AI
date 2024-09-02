@@ -33,19 +33,19 @@ const Intro = () => {
       </div>
     </div>
 
-    <div className="container">
-        <div className="row d-flex justify-content-between"> 
-          <div className="col-12 col-md-5 border border-dark mt-4 p-4 mx-md-4">
-              <p className='text-center h3'>Text GPT</p>
-              <p className="mt-4 text-justify">TextGPT helps you get answers, find inspiration and be more productive. It is free to use and easy to try. Just ask and ChatGPT can help with writing, learning, brainstorming and … more.. Here you can get the answer that you want to know for sure..</p>
-              <button className="btn btn-success"><a><Link to="/text" className="text-white">Go</Link></a></button>
-          </div>
-          <div className=" col-12 col-md-6  border border-dark mt-4 p-4">
-              <p className='text-center h3'>Image GPT</p>
-              <p className="mt-4 text-justify">Image GPT is a generative model that utilizes a variant of the Transformer architecture to produce lifelike images based on textual descriptions. By training on an extensive dataset of images paired with corresponding text descriptions....</p>
-              <button className="btn btn-success mt-4"><a><Link to="/image" className="text-white">Go</Link></a></button>
+    <div className="container w-75">
+        <div className='row d-flex justify-content-center'>
+          <div className='col-12 col-sm-9 col-md-9 border border-dark p-3 mt-4'>
+            <h4 className='text-center'>Text ChatGPT</h4>
+            <p>TextGPT helps you get answers, find inspiration and be more productive. It is free to use and easy to try. Just ask and ChatGPT can help with writing, learning, brainstorming and … more.. Here you can get the answer that you want to know for sure..</p>
           </div>
         </div>
+          <div className='row d-flex justify-content-center'>
+          <div className='col-12 col-sm-9 col-md-9 border border-dark mt-4 p-3'>
+            <h4 className='text-center'>Text ChatGPT</h4>
+            <p>TextGPT helps you get answers, find inspiration and be more productive. It is free to use and easy to try. Just ask and ChatGPT can help with writing, learning, brainstorming and … more.. Here you can get the answer that you want to know for sure..</p>
+          </div>
+          </div>
     </div>
 
     </div>

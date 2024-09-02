@@ -59,7 +59,7 @@ const Text = () => {
           <div className='nav-items'><a href="" className='nav-link text-white' id="l1"><Link to="/" className='text-white text-decoration-none h5'>Home</Link></a></div>
           <div className='nav-items'><a href="" className='nav-link text-white' id="l2"><Link to="/text" className='text-white text-decoration-none h5'>Text</Link></a></div>
           <div className='nav-items'><a href="" className='nav-link text-white' id="l3"><Link to="/image" className='text-white text-decoration-none h5'>Image</Link></a></div>
-          <div className='nav-items'><a href="" className='nav-link text-white' id="l4"><Link to="/about" className='text-white text-decoration-none h5'>About h5</Link></a></div>
+          <div className='nav-items'><a href="" className='nav-link text-white' id="l4"><Link to="/about" className='text-white text-decoration-none h5'>About</Link></a></div>
           </div>    
         </div>
         <div className='justify-content-md-end'>
@@ -67,26 +67,26 @@ const Text = () => {
         </div>
       </header>
 
-      <div className="container">
-        <div className="row">
-          <div className="col-12 border border-dark mt-5 p-5">
+      <div className="container w-75 w-md-75">
+        <div className="row d-flex justify-content-center">
+          <div className="col-12 col-sm-6 border border-dark border-2 mt-5 p-5">
             <p className="h1 text-center mb-5">Text GPT</p>
             <ul>
               {history.map((entry, index) => (
-                <li key={index} className='border border-dark p-3 nav-link mt-2'>
+                <div key={index} className='border border-dark  nav-link mt-2'>
                   <strong>Prompt:</strong> {entry.prompt}
                   <br />
                   <strong>Response:</strong> <pre>{entry.response}</pre>
-                </li>
+                </div>
               ))}
             </ul>
           </div>
         </div>
       </div>
-
+ 
       <div className='container d-flex justify-content-center mt-3 mb-5 pb-5'>
         <div className="row">
-          <div className="col-12">
+          <div className="col-12 col-sm-12 col-md-12">
             <input type="text" onChange={prompt} value={prm} className='form-control ' placeholder='Enter the Prompt' />
           </div>
           <div className="col">
