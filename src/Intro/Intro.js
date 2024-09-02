@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const Intro = () => {
   return (
     <div>
-    <header className='navbar bg-success navbar-dark navbar-expand-sm p-3'>
+    <header className='navbar bg-success navbar-dark navbar-expand-sm p-3 sticky-top'>
         <h2 className='navbar-brand'><a href="#" className='text-white'>Jiren AI</a></h2>
         <button type="button" className='navbar-toggler' data-bs-toggle="collapse" data-bs-target="#box"><span className='navbar-toggler-icon '></span></button>
         <div className='navbar-collapse collapse justify-content-center' id="box">
@@ -41,7 +41,7 @@ const Intro = () => {
           </div>
         </div>
           <div className='row d-flex justify-content-center'>
-          <div className='col-12 col-sm-9 col-md-9 border border-dark mt-4 p-3'>
+          <div className='col-12 col-sm-9 col-md-9 border border-dark mt-4 mb-5 p-3'>
             <h4 className='text-center'>Text ChatGPT</h4>
             <p>TextGPT helps you get answers, find inspiration and be more productive. It is free to use and easy to try. Just ask and ChatGPT can help with writing, learning, brainstorming and … more.. Here you can get the answer that you want to know for sure..</p>
           </div>

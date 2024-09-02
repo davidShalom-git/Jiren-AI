@@ -65,7 +65,7 @@ const Image = () => {
 
   return (
     <>
-      <header className='navbar bg-success navbar-dark navbar-expand-sm p-3'>
+      <header className='navbar bg-success navbar-dark navbar-expand-sm p-3 sticky-top'>
         <h2 className='navbar-brand'><a href="#" className='text-white'>Jiren AI</a></h2>
         <button type="button" className='navbar-toggler' data-bs-toggle="collapse" data-bs-target="#box"><span className='navbar-toggler-icon '></span></button>
         <div className='navbar-collapse collapse justify-content-center' id="box">

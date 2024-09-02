@@ -57,7 +57,7 @@ const About = () => {
         </div>
     </div>
 
-    <h1 className="text-center mt-5 mb-5">Some of the Images</h1>
+    <h4 className="text-center mt-5 mb-5">Some of the Images</h4>
    
    <div className='container w-75'>
     <div className="row">
