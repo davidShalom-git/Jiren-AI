@@ -75,21 +75,22 @@ const Text = () => {
       </div>
       </div>
 
-      <div className="container w-75 d-flex justify-content-center">
-        <div className='row d-flex justify-content-center mt-5'>   
-          <div className='col-4 col-md-6 col-sm-4 '>
-           <ul>
-              {history.map((entry, index) => (
-                <div key={index} className='border border-dark p-5 mt-2'>
-                  <strong>Prompt:</strong> {entry.prompt}
-                  <br />
-                  <strong>Response:</strong> <pre>{entry.response}</pre>
-                </div>
-              ))}
-            </ul>
+      <div className="container-fluid d-flex justify-content-center">
+  <div className="row d-flex justify-content-center mt-5 w-100">
+    <div className="col-12 col-md-10 col-lg-8">
+      <ul className="list-unstyled">
+        {history.map((entry, index) => (
+          <div key={index} className="border border-dark p-3 mt-2">
+            <strong>Prompt:</strong> <span className="d-block">{entry.prompt}</span>
+            <strong>Response:</strong> <pre className="d-block">{entry.response}</pre>
           </div>
-        </div>
-      </div>
+        ))}
+      </ul>
+    </div>
+  </div>
+</div>
+
+
  
       <div className='container d-flex justify-content-center mt-3 mb-5 pb-5'>
         <div className="row">
