@@ -67,13 +67,20 @@ const Text = () => {
         </div>
       </header>
 
-      <div className="container w-75 w-md-75">
+      <div className="container w-75">
         <div className="row d-flex justify-content-center">
           <div className="col-12 col-sm-6 border border-dark border-2 mt-5 p-5">
             <p className="h1 text-center mb-5">Text GPT</p>
-            <ul>
+        </div>
+      </div>
+      </div>
+
+      <div className="container w-75 d-flex justify-content-center">
+        <div className='row d-flex justify-content-center mt-5'>   
+          <div className='col-4 col-md-6 col-sm-4 '>
+           <ul>
               {history.map((entry, index) => (
-                <div key={index} className='border border-dark  nav-link mt-2'>
+                <div key={index} className='border border-dark p-5 mt-2'>
                   <strong>Prompt:</strong> {entry.prompt}
                   <br />
                   <strong>Response:</strong> <pre>{entry.response}</pre>
