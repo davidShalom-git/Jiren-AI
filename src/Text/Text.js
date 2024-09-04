@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 const Text = () => {
   const [prm, setPrm] = useState('');
   const [history, setHistory] = useState([]);
-  const apiKey = "AIzaSyASzLM811gQUblPmAiFKmdtbzwTf5t-3Mk";
+  const apiKey = "AIzaSyBUonipQ-npXPV9s0aC8292FKYJ5Z7-ZyM";
   const genAI = new GoogleGenerativeAI(apiKey);
 
   const model = genAI.getGenerativeModel({
